@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+<script src="jquery.js"></script>
+<style>
+  .work-button button{font-size: 16px;}
+</style>
+
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="home">Home</a>
+    <a href="work.html" class="work">Work</a>
+    <a href="contact.php" class="contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="language">
+    <div class="language-1">
+      <a href="index.html">English </a> |
+    </div>
+    <div class="language-2">
+      <a href="index-jp.html">日本語</a>
+    </div>
+  </div>
+<div class="main">
+    <div class="main-images">
+      <div class="profile w3-animate-top">
+        <div class="image-one">
+            <img src="images/temp_profile_image5307745376043954925.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="my_name">
+      <div class="prof-text Slides w3-animate-bottom">
+          <h1>Sean Narron</h1>
+          <p>Front-End Developer</p>
+        </div>
+    </div>
+</div>
+
+<div class="show-photos">
+
+  <div class="frame-one">
+    <div class="photo-one">
+      <img src="images/2.png" alt="">
+    </div>
+
+  </div>
+
+  <hr>
+
+  <div class="frame-two">
+    <div class="photo-two">
+      <img src="images/1.png" alt="">
+    </div>
+  </div>
+
+</div>
+
+<div class="talk-box">
+  <div class="inner-box-one">
+    <p>Hi, I'm Sean - a Front-End Developer who helps individuals and small businesses establish their presense online. </p>
+    <p>It was a litle over six months after working from home that I started making website for people. My goal is to create simple amd mobile friendly websites for you. </p>
+    
+    <!--
+    <div class="work-button">
+      <button><a href="">See My Work (Coming Soon)</a></button>
+    </div>
+    -->
+  </div>
+
+  <div class="inner-box-two">
+    <img src="https://cdn.pixabay.com/photo/2015/11/09/14/43/laptop-1035345_1280.jpg" alt="">
+    
+  </div>
+
+  
+
+
+</div>
+
+<div class="footer">
+
+  <div class="location">
+      <p>Based in Nagoya, Japan since 2021</p>
+
+      <div class="contact-us">
+          <p>Contact us <a href="contact.php">here</a></p>
+      </div>
+  </div>
+
+  <div class="social-media">
+      <div class="instagram" id="instagram">
+          <a href="https://www.instagram.com/seannarron9/" target="_blank"><img src="images/instagram_logo.webp" alt=""></a>
+      </div>
+      <div class="twitter" id="twitter">
+          <a href="https://twitter.com/SeanNarron" target="_blank"><img src="images/twitter_logo.webp" alt=""></a>
+      </div>
+
+      <p>seannarron.com</p>
+  </div>
+
+  
+
+</div>
+ 
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<script>
+  var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("profile prof-text");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2500);    
+    }
+</script>
+
+<script src="index.js"></script>
+
+</body>
+</html>

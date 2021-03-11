@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+    <script type="text/javascript" src="work.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" href="work.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+    
+    
+  </head>
+
+
+
+  <body>
+    <div class="main-load" id="main-load">
+    
+
+        <div class="animate-background">
+
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="home">Home</a>
+                <a href="work.html" class="work">Work</a>
+                <a href="contact.php" class="contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="iconFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        
+          <div class="main-img" id="main-img">
+            <div class="language">
+              <div class="language-1">
+                <a href="work.html">English </a> |
+              </div>
+              <div class="language-2">
+                <a href="work-jp.html">日本語</a>
+              </div>
+            </div>
+
+          
+            
+
+            <div class="animate-text">
+              <div class="main">
+                <div class="banner" id="banner">
+                  <p>We offer amazing websites</p>    
+                  <div class="button" id="button" onclick="myFunction()">
+                    <button onclick="myFunction()">Watch Video</button><br><br>
+                  </div> 
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+      <section class="supporting">
+        <div class="container">
+              
+          <div class="col">
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/design.svg">
+            <h2>Design</h2>
+            <p>Make your website look outstanding.</p>
+                
+          </div>
+              
+          <div class="col">
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg">
+            <h2>Develop</h2>
+            <p>Use code to turn your idea into a web site</p>
+                
+          </div>
+              
+          <div class="col">
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/deploy.svg">
+            <h2>Deploy</h2>
+            <p>Use tools to turn your design into a web site</p>
+                
+          </div>    
+              
+        </div>
+      </section>
+
+      <hr>
+
+      <div class="intro" id="intro">
+
+
+        <div class="intro-video" id="intro-video">
+          <iframe width="580" height="355" src="https://www.youtube.com/embed/BObKSgK-z2I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+
+        <div class="intro-text">
+          <a href="https://www.instagram.com/seannarron9/"><img src="https://cdn.pixabay.com/photo/2016/09/17/07/03/instagram-1675670_960_720.png" alt=""></a>
+          <p>
+          <a href="https://www.instagram.com/seannarron9/"> Follow me on instagram! </a>
+          <br><br><a href="https://www.instagram.com/seannarron9/">Sean Narron</a>
+          </p>
+            
+        </div>
+      </div>
+
+        
+      <hr>
+          
+
+      <div class="customer-box">
+        <div class="customers">
+          <h2>Trusted by customers</h2>
+          <p>Coming soon....</p>
+        </div>
+      </div>
+
+      <div class="footer">
+
+        <div class="location">
+            <p>Based in Nagoya, Japan since 2021</p>
+      
+            <div class="contact-us">
+                <p>Contact us <a href="contact.php">here</a></p>
+            </div>
+        </div>
+      
+        <div class="social-media">
+            <div class="instagram" id="instagram">
+                <a href="https://www.instagram.com/seannarron9/" target="_blank"><img src="images/instagram_logo.webp" alt=""></a>
+            </div>
+            <div class="twitter" id="twitter">
+                <a href="https://twitter.com/SeanNarron" target="_blank"><img src="images/twitter_logo.webp" alt=""></a>
+            </div>
+      
+            <p>seannarron.com</p>
+        </div>
+      
+      </div>
+
+      
+    </div>  
+    
+    <script>
+      function myFunction() {
+      var elmnt = document.getElementById("intro");
+      elmnt.scrollIntoView();
+      };
+
+
+      function iconFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+      $(document).ready(function() {
+      $('#main-load').hide().delay(200).fadeIn(1500);
+      });
+
+            
+
+              
+      $(document).ready(function() {
+          $('#banner').hide().delay(1400).fadeIn(1500);
+      });
+
+            
+
+              
+      $(document).ready(function() {
+          $('#button').hide().delay(2100).fadeIn(1500);
+      });
+    </script>
+    
+  </body>
+</html>
+
+
